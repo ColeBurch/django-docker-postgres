@@ -13,3 +13,7 @@ RUN pip install -r requirements.txt
 
 #Copy the project
 COPY . .
+
+RUN chmod +x /app/entrypoint.sh
+
+CMD ["bash", "-c", "/app/entrypoint.sh"]
