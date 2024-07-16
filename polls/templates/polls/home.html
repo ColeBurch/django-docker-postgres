@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
         {% load static %}
+        <script src="{% static 'js/htmx.min.js' %}"></script>
         <link
             rel="stylesheet"
             href="{% static 'css/output.css' %}"
@@ -14,7 +15,7 @@
     </head>
     <body class="h-screen flex justify-center items-center">
         <div class="w-3/5 m-auto">
-            <div class="text-green-700">Hello World!</div>
+            <div class="text-red-700">Hello World!</div>
         </div>
     </body>
 </html>
